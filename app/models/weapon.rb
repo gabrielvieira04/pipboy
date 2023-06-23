@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 class Weapon < Item
-  attr_reader :weapon_damage, :item_category
+  attr_reader :weapon_damage
 
   def initialize(item_name, item_valor, weapon_dmg, item_category)
     @item_name = item_name
@@ -10,6 +10,6 @@ class Weapon < Item
   end
 
   def to_s
-    "Nome: #{item_name}, Dano: #{@weapon_dmg}, Valor: #{@item_valor}, Categoria: #{item_category}"
+    "Nome: #{item_name}, Dano: #{@weapon_dmg}, Valor: #{@item_valor}, Categoria: #{@item_category}"
   end
 end
