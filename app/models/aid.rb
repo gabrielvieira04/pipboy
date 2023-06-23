@@ -3,7 +3,7 @@
 class Aid < Item
   attr_reader :aid_cure
 
-  def initialialize(item_name, aid_cure, item_valor, item_category = :aid)
+  def initialize(item_name, aid_cure, item_valor, item_category = :aid)
     @item_name = item_name
     @aid_cure = aid_cure
     @item_valor = item_valor
